@@ -98,7 +98,7 @@ function relativity_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	//wp_enqueue_style( 'relativity-googlefonts', 'http://fonts.googleapis.com/css?family=Vollkorn:400|Open+Sans:300,400,700');
+	wp_enqueue_style( 'relativity-googlefonts', 'http://fonts.googleapis.com/css?family=Vollkorn:400|Open+Sans:300,400,700');
 }
 add_action( 'wp_enqueue_scripts', 'relativity_scripts' );
 
