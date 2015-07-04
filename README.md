@@ -20,6 +20,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 1. Does this theme support any plugins?  
 	Relativity includes support for Infinite Scroll in Jetpack.
+2. How to set the circular image in the header?
+	Go to customizer and add a header image(preferably square).
 
 #Changelog
 
