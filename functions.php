@@ -110,6 +110,10 @@ add_action( 'wp_enqueue_scripts', 'relativity_scripts' );
 function relativity_custom_header_setup() {
     add_theme_support( 'custom-header', apply_filters( 'relativity_custom_header_args', array(
         'default-image'          => relativity_get_default_header_image(),
+        'width'                  => 120,
+	'height'                 => 120,
+	'flex-height'            => true,
+	'flex-width'             => true
 
     ) ) );
 }
