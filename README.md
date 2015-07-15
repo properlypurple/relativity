@@ -2,7 +2,7 @@
 
 Contributors: automattic
 
-Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
+Tags: translation-ready, custom-background, custom-menu, post-formats, threaded-comments
 
 Requires at least: 4.0  
 Tested up to: 4.2.2  
@@ -27,6 +27,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 - 1.0 - Jun 30 2015 =
 	* Initial release
+- 1.0.1 - Jul 15 2015 = 
+ 	* Fixed default header image not appearing
+ 	* Removed extraneous tags
+ 	* Updated screenshot
+ 	* Fixed bitesized bugs
 
 #Credits
 
