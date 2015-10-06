@@ -1215,7 +1215,7 @@ object {
     /*max-width: 1140px;*/
   }
   .site-title {
-    font-size: 3.6em;
+    font-size: 2.6em;
     margin: 0 auto;
     max-width: 100%;
   }
@@ -1256,5 +1256,41 @@ object {
   }
   .has-header .site-branding {
     padding: 6em 0 1.5em;
+  }
+
+  .site-header {
+    width: 24%;
+    float: left;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-inidex: 10;
+  }
+
+  .site-content {
+    width: 75%;
+    float: left;
+    margin-left: 24%;
+    background: #efefef;
+  }
+
+  .site-content .hentry {
+    margin-left: 5%;
+  }
+
+  .site-main .comment-navigation,
+  .site-main .posts-navigation,
+  .site-main .post-navigation {
+    max-width: 720px;
+    margin-left: 5%;
+  }
+
+  .site-footer {
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    width: 20%;
+    float: left;
+    z-index: 99;
   }
 }
