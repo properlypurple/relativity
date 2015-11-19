@@ -952,6 +952,80 @@ a:active {
   display: block;
 }
 
+.comment-respond,
+.entry-comments,
+.entry-pings {
+  background-color: #f4f4f4;
+  border: 1px solid #e7e7e7;
+  margin-bottom: 24px;
+}
+
+.entry-comments ol,
+.entry-comments ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.comment-list {
+  margin-bottom: 24px;
+}
+
+.comment-respond,
+.entry-pings {
+  padding: 40px 40px 16px;
+}
+
+.entry-comments {
+  padding: 40px 0px 16px;
+}
+
+.comment-header {
+  font-size: 16px;
+}
+
+li.comment {
+  background-color: #fff;
+  border: 1px solid #e7e7e7;
+  border-right: none;
+}
+
+.comment-content {
+  clear: both;
+}
+
+.comment-list li {
+  margin-top: 24px;
+  padding: 32px;
+}
+
+.comment-list li li {
+  margin-right: -32px;
+}
+
+.comment-respond label {
+  display: block;
+  margin-right: 12px;
+}
+
+.entry-comments .comment-author {
+  margin-bottom: 0;
+}
+
+.comment .avatar {
+  border-radius: 100%;
+  margin: 0 16px 24px 0;
+  float: left;
+}
+
+.entry-pings .reply {
+  display: none;
+}
+
+.form-allowed-tags {
+  font-size: 14px;
+  padding: 24px;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

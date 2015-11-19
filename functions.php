@@ -109,8 +109,8 @@ add_action( 'wp_enqueue_scripts', 'relativity_scripts' );
 
 function relativity_custom_header_setup() {
     add_theme_support( 'custom-header', apply_filters( 'relativity_custom_header_args', array(
-        'default-image'          => relativity_get_default_header_image(),
-        'width'                  => 150,
+    'default-image'          => relativity_get_default_header_image(),
+    'width'                  => 150,
 	'height'                 => 150,
 	'flex-height'            => true,
 	'flex-width'             => true
@@ -156,3 +156,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Load Custom comments callback file.
+ */
+require get_template_directory() . '/inc/custom-comments.php';
