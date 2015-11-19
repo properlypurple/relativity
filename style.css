@@ -307,22 +307,28 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   color: #3c3c3c;
 }
+
 h1 {
   font-size: 2.625em;
 }
+
 h2 {
   font-size: 1.625em;
 }
+
 h3 {
   font-size: 1.25em;
 }
+
 h4 {
   font-size: 1em;
 }
+
 h5 {
   font-size: .8125em;
   text-transform: uppercase;
 }
+
 h6 {
   font-size: .8125em;
 }
@@ -1175,25 +1181,27 @@ object {
     margin-right: auto;
     max-width: 720px;
   }
+
   .main-navigation {
     text-align: center;
   }
-  .main-navigation ul {
-    padding: .75em 0;
-  }
+
   .main-navigation div > ul:first-child {
     margin-left: auto;
   }
+
   .main-navigation li {
     display: inline-block;
     margin-right: 1.5em;
     position: relative;
   }
+
   .main-navigation a {
     border: 0;
     font-size: 0.8125em;
     padding: .375em 0;
   }
+
   .main-navigation ul ul {
     background: #2d2d2d;
     box-shadow: 0 0px 3px rgba(0, 0, 0, 0.2);
@@ -1207,33 +1215,40 @@ object {
     top: 1.875em;
     z-index: 99999;
   }
+
   .main-navigation ul ul li {
     margin-right: 0;
   }
+
   .main-navigation ul ul ul {
     padding-left: 0;
     left: 100%;
     top: 0;
   }
+
   .main-navigation ul ul a,
   .main-navigation ul ul ul a,
   .main-navigation ul ul ul ul a {
     border-bottom: 1px solid #1d1d1d;
     padding-left: 1.5em;
   }
+
   .main-navigation ul ul a {
     padding: .75em 1.5em;
     text-align: left;
     width: 200px;
   }
+
   .main-navigation ul li:hover > ul,
   .main-navigation ul li.focus > ul {
     display: block;
   }
+
   .entry-content,
   .comment-content {
     font-size: 1.2em;
   }
+
   .entry-meta {
     font-size: 1em;
   }
@@ -1242,18 +1257,22 @@ object {
   .page-title {
     font-size: 1.9em;
   }
+
   footer.entry-meta span {
     clear: none;
     display: inline-block;
     margin-right: 1.5em;
     padding: .375em 0;
   }
+
   footer.entry-meta span:last-child {
     margin-right: 0;
   }
+
   .comments-title {
     font-size: 1.625em;
   }
+
   .site-footer .sep {
     clear: none;
     display: inline-block;
@@ -1261,18 +1280,23 @@ object {
     visibility: visible;
     width: auto;
   }
+
   .comments-area ul.children {
     margin-left: 3em;
   }
+
   .format-link .entry-title a:after {
     font-size: 36px;
   }
+
   .has-header .site-branding {
     padding: 1.5em 0;
   }
+
   .entry-format:before {
     font-size: 24px;
   }
+
 }
 @media screen and ( min-width: 1250px ) {
   .container,
@@ -1288,46 +1312,57 @@ object {
   .page-header {
     /*max-width: 1140px;*/
   }
+
   .site-title {
     font-size: 2.6em;
     margin: 0 auto;
     max-width: 100%;
   }
+
   .site-description {
     font-size: 1em;
     margin: 0 auto;
     max-width: 100%;
   }
+
   .main-navigation a {
     font-size: 1em;
   }
+
   .widget_search .search-submit {
     display: none;
   }
+
   .widget_search .search-field {
     border-radius: 3px;
     margin: 0 auto;
     padding-top: .75em;
     padding-bottom: .75em;
   }
+
   .entry-content,
   .comment-content,
   code {
     font-size: 1.125em;
   }
+
   .entry-meta {
     font-size: 1.25em;
   }
+
   .entry-title,
   .page-title {
     font-size: 2.0em;
   }
+
   .comments-title {
     font-size: 1.9em;
   }
+
   .format-link .entry-title a:after {
     font-size: 48px;
   }
+
   .has-header .site-branding {
     padding: 6em 0 1.5em;
   }
