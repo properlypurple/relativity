@@ -636,6 +636,7 @@ a:active {
   background: transparent;
   display: block;
   margin-left: 0;
+  border-left: 20px solid #1d1d1d;
 }
 .main-navigation ul ul a {
   padding-left: 1.5em;
@@ -653,15 +654,16 @@ a:active {
   border-bottom: 1px solid #1d1d1d;
   color: #eaedf1;
   display: block;
-  padding: .75em;
+  padding: 1.4em 1.6em;
   text-decoration: none;
 }
-.main-navigation a:hover {
+.main-navigation li:hover >a {
   color: #fff;
+  background: #2d2d2d;
 }
 .main-navigation li.current_page_item a,
 .main-navigation li.current-menu-item a {
-  color: #8fded3;
+  background: #2d2d2d;
 }
 
 /* Small menu */
@@ -680,7 +682,7 @@ a:active {
     color: #fff;
     font-size: 1.25em;
     margin: 0;
-    padding: 0.375em 0;
+    padding: 1.2em 0;
     position: relative;
     z-index: 2;
     display: block;
@@ -1182,6 +1184,14 @@ object {
     max-width: 720px;
   }
 
+  .site-branding {
+    padding-bottom: 1.6em;
+  }
+
+  .menu-short-container {
+    background: #3d3d3d;
+  }
+
   .main-navigation {
     text-align: center;
   }
@@ -1192,18 +1202,17 @@ object {
 
   .main-navigation li {
     display: inline-block;
-    margin-right: 1.5em;
     position: relative;
   }
 
   .main-navigation a {
     border: 0;
     font-size: 0.8125em;
-    padding: .375em 0;
+    padding: 1.2em 1em;
   }
 
   .main-navigation ul ul {
-    background: #2d2d2d;
+    background: #3d3d3d;
     box-shadow: 0 0px 3px rgba(0, 0, 0, 0.2);
     display: none;
     float: left;
@@ -1212,7 +1221,7 @@ object {
     padding-bottom: 0;
     padding-left: 0;
     position: absolute;
-    top: 1.875em;
+    top: 2.8em;
     z-index: 99999;
   }
 
@@ -1367,5 +1376,8 @@ object {
     padding: 6em 0 1.5em;
   }
 
+  .main-navigation ul ul {
+    top: 3.9em;
+  }
   
 }
