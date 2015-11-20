@@ -15,14 +15,6 @@ if ( ! function_exists( 'relativity_setup' ) ) :
  */
 function relativity_setup() {
 
-	/*
-	 * Make theme available for translation.
-	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on Relativity, use a find and replace
-	 * to change 'relativity' to the name of your theme in all the template files
-	 */
-	load_theme_textdomain( 'relativity', get_template_directory() . '/languages' );
-
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
@@ -98,7 +90,7 @@ function relativity_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	wp_enqueue_style( 'relativity-googlefonts', 'http://fonts.googleapis.com/css?family=Vollkorn:400|Open+Sans:300,400,700');
+	wp_enqueue_style( 'relativity-googlefonts', '//fonts.googleapis.com/css?family=Vollkorn:400|Open+Sans:300,400,700');
 }
 add_action( 'wp_enqueue_scripts', 'relativity_scripts' );
 
