@@ -1406,3 +1406,91 @@ object {
   }
   
 }
+
+/*--------------------------------------------------------------
+# Colour Schemes
+--------------------------------------------------------------*/
+
+/* Blue *************************/
+
+.blue body {
+	background: #bbdefb;
+}
+.blue .site-header,
+.blue .main-navigation li:hover > a,
+.blue .site-footer {
+	background: #1976d2; /* Dark */
+}
+
+.blue .main-navigation ul ul,
+.blue .main-navigation ul ul a {
+	border-color: #1976d2; /* Dark */
+}
+
+.blue .primary-menu-container,
+.blue .main-navigation ul ul {
+	background: #2196f3; /* Light */
+}
+
+/* Green *************************/
+
+.green body {
+	background: #c8e6c9;
+}
+.green .site-header,
+.green .main-navigation li:hover > a,
+.green .site-footer {
+	background: #388e3c; /* Dark */
+}
+
+.green .main-navigation ul ul,
+.green .main-navigation ul ul a {
+	border-color: #388e3c; /* Dark */
+}
+
+.green .primary-menu-container,
+.green .main-navigation ul ul {
+	background: #4caf50; /* Light */
+}
+
+/* Red *************************/
+
+.red body {
+	background: #ffcdd2;
+}
+.red .site-header,
+.red .main-navigation li:hover > a,
+.red .site-footer {
+	background: #d32f2f; /* Dark */
+}
+
+.red .main-navigation ul ul,
+.red .main-navigation ul ul a {
+	border-color: #d32f2f; /* Dark */
+}
+
+.red .primary-menu-container,
+.red .main-navigation ul ul {
+	background: #f44336; /* Light */
+}
+
+/* Teal *************************/
+
+.teal body {
+	background: #b2dfdb;
+}
+.teal .site-header,
+.teal .main-navigation li:hover > a,
+.teal .site-footer {
+	background: #00796b; /* Dark */
+}
+
+.teal .main-navigation ul ul,
+.teal .main-navigation ul ul a {
+	border-color: #00796b; /* Dark */
+}
+
+.teal .primary-menu-container,
+.teal .main-navigation ul ul {
+	background: #009688; /* Light */
+}
