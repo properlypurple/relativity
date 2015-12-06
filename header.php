@@ -39,7 +39,7 @@
 
     <nav id="site-navigation" class="main-navigation" role="navigation">
       <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'relativity' ); ?></button>
-      <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+      <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'container_class' => 'primary-menu-container' ) ); ?>
     </nav><!-- #site-navigation -->
   </header><!-- #masthead -->
 
