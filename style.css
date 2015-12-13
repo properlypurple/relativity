@@ -365,9 +365,9 @@ i {
 }
 
 blockquote {
-	margin: 0 2.5em;
+	margin: 0 0.5em;
 	font-style: italic;
-	font-size: 1.2em;
+	font-size: 1.1em;
 }
 
 address {
@@ -957,7 +957,7 @@ a:active {
 	background: #2d2d2d;
 	color:#f2f2f2;
 	border-bottom: 1px solid rgba(250,250,250,0.3);
-	font-size: 1.5em;
+	font-size: 1.2em;
 	font-style: italic;
 	font-family: 'Vollkorn', serif;
 }
@@ -965,7 +965,11 @@ a:active {
 .blog .format-quote .entry-content,
 .archive .format-quote .entry-content {
 	background: url(images/quote.svg) no-repeat top left;
-	padding-left: 85px;
+}
+
+.blog .format-quote blockquote,
+.archive .format-quote blockquote {
+	margin-left: 85px;
 }
 
 .blog .format-quote .entry-footer,
@@ -1419,7 +1423,9 @@ object {
 }
 .blue .site-header,
 .blue .main-navigation li:hover > a,
-.blue .site-footer {
+.blue .site-footer,
+.blue.blog .format-quote,
+.blue.archive .format-quote {
 	background: #1976d2; /* Dark */
 }
 
@@ -1440,7 +1446,9 @@ object {
 }
 .green .site-header,
 .green .main-navigation li:hover > a,
-.green .site-footer {
+.green .site-footer,
+.green.blog .format-quote,
+.green.archive .format-quote {
 	background: #388e3c; /* Dark */
 }
 
@@ -1461,7 +1469,9 @@ object {
 }
 .red .site-header,
 .red .main-navigation li:hover > a,
-.red .site-footer {
+.red .site-footer,
+.red.blog .format-quote,
+.red.archive .format-quote {
 	background: #d32f2f; /* Dark */
 }
 
@@ -1482,7 +1492,9 @@ object {
 }
 .teal .site-header,
 .teal .main-navigation li:hover > a,
-.teal .site-footer {
+.teal .site-footer,
+.teal.blog .format-quote,
+.teal.archive .format-quote {
 	background: #00796b; /* Dark */
 }
 
