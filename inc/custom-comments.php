@@ -10,9 +10,9 @@
  *
  * @package Relativity
  * @see http://codex.wordpress.org/Function_Reference/
- * @param $comment the current commrnt object
- * @param $args
- * @param $depth depth of comment thread
+ * @param object  $comment the current commrnt object
+ * @param array    $args
+ * @param int $depth depth of comment thread.
  */
 function relativity_custom_comments( $comment, $args, $depth ) {
 	switch ( $comment->comment_type ) :
@@ -54,9 +54,7 @@ function relativity_custom_comments( $comment, $args, $depth ) {
 					'after' => ' <span>&darr;</span>',
 					'depth' => $depth,
 					'max_depth' => $args['max_depth'],
-				)
-			)
-				);
+				) ) );
 				?>
 				</div>
 

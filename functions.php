@@ -87,8 +87,9 @@ add_action( 'after_setup_theme', 'relativity_setup' );
  */
 function relativity_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'relativity_content_width', 760 );
-	if ( ! isset( $content_width ) )
+	if ( ! isset( $content_width ) ) {
 		$content_width = 760;
+	}
 }
 add_action( 'after_setup_theme', 'relativity_content_width', 0 );
 
@@ -120,9 +121,7 @@ function relativity_custom_header_setup() {
 		'height'                 => 150,
 		'flex-height'            => true,
 		'flex-width'             => true,
-		)
-		)
-	);
+	) ) );
 }
 add_action( 'after_setup_theme', 'relativity_custom_header_setup' );
 
@@ -133,10 +132,11 @@ function relativity_get_default_header_image() {
 
 	// Get default from Discussion Settings.
 	$default = get_option( 'avatar_default', 'mystery' ); // Mystery man default.
-	if ( 'mystery' == $default )
-			$default = 'mm';
-	elseif ( 'gravatar_default' == $default )
-			$default = '';
+	if ( 'mystery' == $default ) {
+		$default = 'mm';
+	} elseif ( 'gravatar_default' == $default ) {
+		$default = '';
+	}
 
 	$protocol = ( is_ssl() ) ? 'https://secure.' : 'http://';
 	$url = sprintf( '%1$sgravatar.com/avatar/%2$s/', $protocol, md5( get_option( 'admin_email' ) ) );
