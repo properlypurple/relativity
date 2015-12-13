@@ -58,7 +58,7 @@ function relativity_register_color_scheme_customizer( WP_Customize_Manager $wp_c
 		'default'  => 'default',
 		'type'     => 'radio',
 		'choices'  => $schemes,
-	) ) );
+		) ) );
 }
 
 
