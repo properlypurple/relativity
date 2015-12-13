@@ -33,4 +33,10 @@
 			}
 		} );
 	} );
+	// Body class.
+	wp.customize( 'relativity_color_scheme', function( value ) {
+		value.bind( function( to ) {
+			$( 'body' ).removeClass( 'red green blue teal').addClass( to );
+		} );
+	} );
 } )( jQuery );

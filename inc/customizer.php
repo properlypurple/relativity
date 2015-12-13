@@ -24,3 +24,85 @@ function relativity_customize_preview_js() {
 	wp_enqueue_script( 'relativity_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20130508', true );
 }
 add_action( 'customize_preview_init', 'relativity_customize_preview_js' );
+
+add_action( 'customize_register', 'relativity_register_color_scheme_customizer' );
+
+/**
+ * Adding our own colorscheme "burly-wood"
+ *
+ * @wp-hook 	customize_register
+ * @param	WP_Customize_Manager $wp_customize
+ * @return	Void
+ */
+function relativity_register_color_scheme_customizer( WP_Customize_Manager $wp_customize ) {
+
+	$schemes	= relativity_get_color_schemes();
+	$section	= 'colors';
+	$key		= 'relativity_color_scheme';
+	$title		= __( 'Color scheme', 'relativity' );
+
+	$wp_customize->add_setting(
+		$key,
+		array (
+			'default' => 'default',
+			'transport' => 'postMessage',
+		)
+	);
+
+	$wp_customize->add_control(
+		$key, ( array (
+			'label'    => $title,
+			'section'  => $section,
+			'settings' => $key,
+			'schemes'  => $schemes,
+			'default'  => 'default',
+			'type'     => 'radio',
+			'choices'  => $schemes,
+			)
+		)
+	);
+}
+
+
+/**
+ * Get color schemes.
+ *
+ * @return-filter	relativity_get_color_schemes
+ * @return			Array
+ */
+function relativity_get_color_schemes() {
+
+	$schemes = array (
+		'default' => __( 'Default', 'relativity' ),
+		'blue' => __( 'Blue', 'relativity' ),
+		'red' => __( 'Red', 'relativity' ),
+		'green' => __( 'Green', 'relativity' ),
+		'teal' => __( 'Teal', 'relativity' ),
+	);
+
+	return apply_filters( 'relativity_get_color_schemes', $schemes );
+}
+
+add_filter( 'body_class', 'relativity_filter_body_class_add_colorscheme' );
+
+/**
+ * Adding our color scheme to the body-classes
+ *
+ * @wp-hook	body_class
+ * @uses	get_theme_mod, relativity_get_color_schemes
+ * @param	Array $classes
+ * @return	Array $classes
+ */
+function relativity_filter_body_class_add_colorscheme( Array $classes ) {
+
+	$scheme		= get_theme_mod( 'relativity_color_scheme' );
+	$schemes	= relativity_get_color_schemes();
+
+	if ( empty ( $schemes ) || !array_key_exists ( $scheme, $schemes ) ) {
+		$scheme = "default";
+	}
+
+	$classes[] = $scheme;
+
+	return $classes;
+}
