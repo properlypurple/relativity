@@ -70,7 +70,7 @@ function relativity_sanitize_color( $value ) {
 }
 
 /**
- * Get color schemes.
+ * Get color schemes. You can filter this in your child theme.
  *
  * @return-filter	relativity_get_color_schemes
  * @return			Array
