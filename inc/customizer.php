@@ -28,7 +28,7 @@ add_action( 'customize_preview_init', 'relativity_customize_preview_js' );
 add_action( 'customize_register', 'relativity_register_color_scheme_customizer' );
 
 /**
- * Adding our own colorscheme "burly-wood"
+ * Adding our colour scheme setting and control
  *
  * @wp-hook 	customize_register
  * @param	WP_Customize_Manager $wp_customize
