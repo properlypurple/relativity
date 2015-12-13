@@ -71,7 +71,7 @@ if ( ! function_exists( 'relativity_setup' ) ) :
 
 		// Set up the WordPress core custom background feature.
 		add_theme_support( 'custom-background', apply_filters( 'relativity_custom_background_args', array(
-			'default-color' => 'ffffff',
+			'default-color' => 'efefef',
 			'default-image' => '',
 		) ) );
 	}
