@@ -973,8 +973,11 @@ a:active {
 	color:#f2f2f2;
 	border-bottom: 1px solid rgba(250,250,250,0.3);
 	font-size: 1.2em;
-	font-style: italic;
-	font-family: 'Vollkorn', serif;
+}
+
+.blog .format-quote .wrap,
+.archive .format-quote .wrap {
+	background: transparent;
 }
 
 .blog .format-quote .entry-content,
@@ -985,6 +988,8 @@ a:active {
 .blog .format-quote blockquote,
 .archive .format-quote blockquote {
 	margin-left: 85px;
+	font-family: 'Vollkorn', serif;
+	font-style: italic;
 }
 
 .blog .format-quote .entry-footer,
