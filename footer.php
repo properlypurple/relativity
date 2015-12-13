@@ -11,6 +11,14 @@
 
 	</div><!-- #content -->
 
+	<?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
+	<div class="footer-widgets">
+		<aside id="secondary" class="widget-area" role="complementary">
+		<?php dynamic_sidebar( 'footer-1' ); ?>
+		</aside><!-- #secondary -->
+	</div>
+	<?php endif; ?>
+
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info container">
 			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'relativity' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'relativity' ), 'WordPress' ); ?></a>

@@ -1087,6 +1087,42 @@ li.comment {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+.footer-widgets {
+	position: relative;
+	background: #3d3d3d;
+	color: #fff;
+	padding: 2.6em 0 1.4em;
+}
+
+.footer-widgets .widget:last-child {
+	margin: 0;
+	padding: 0;
+}
+
+.footer-widgets .menu {
+	list-style: none;
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+}
+
+.footer-widgets .menu li {
+	display: inline-block;
+	text-align: center;
+}
+
+.footer-widgets .menu a {
+	display: block;
+	color: #ffffff;
+	padding: 14px;
+	border: none;
+}
+
+.footer-widgets .menu a:hover {
+	bordr: none;
+	text-decoration: underline;
+}
+
 .site-footer {
 	background: #2d2d2d;
 	color:#fafafa;
@@ -1469,7 +1505,8 @@ object {
 }
 
 .blue .primary-menu-container,
-.blue .main-navigation ul ul {
+.blue .main-navigation ul ul,
+.blue .footer-widgets {
 	background: #2196f3; /* Light */
 }
 
@@ -1498,7 +1535,8 @@ object {
 }
 
 .green .primary-menu-container,
-.green .main-navigation ul ul {
+.green .main-navigation ul ul,
+.green .footer-widgets {
 	background: #4caf50; /* Light */
 }
 
@@ -1527,7 +1565,8 @@ object {
 }
 
 .red .primary-menu-container,
-.red .main-navigation ul ul {
+.red .main-navigation ul ul,
+.red .footer-widgets {
 	background: #f44336; /* Light */
 }
 
@@ -1556,6 +1595,7 @@ object {
 }
 
 .teal .primary-menu-container,
-.teal .main-navigation ul ul {
+.teal .main-navigation ul ul,
+.teal .footer-widgets {
 	background: #009688; /* Light */
 }
