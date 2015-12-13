@@ -114,39 +114,7 @@ add_action( 'wp_enqueue_scripts', 'relativity_scripts' );
 /**
  * Implement the Custom Header feature.
  */
-function relativity_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'relativity_custom_header_args', array(
-		'default-image'          => relativity_get_default_header_image(),
-		'width'                  => 150,
-		'height'                 => 150,
-		'flex-height'            => true,
-		'flex-width'             => true,
-	) ) );
-}
-add_action( 'after_setup_theme', 'relativity_custom_header_setup' );
-
-/**
- * Implement the Custom Avatar Header feature.
- */
-function relativity_get_default_header_image() {
-
-	// Get default from Discussion Settings.
-	$default = get_option( 'avatar_default', 'mystery' ); // Mystery man default.
-	if ( 'mystery' == $default ) {
-		$default = 'mm';
-	} elseif ( 'gravatar_default' == $default ) {
-		$default = '';
-	}
-
-	$protocol = ( is_ssl() ) ? 'https://secure.' : 'http://';
-	$url = sprintf( '%1$sgravatar.com/avatar/%2$s/', $protocol, md5( get_option( 'admin_email' ) ) );
-	$url = add_query_arg( array(
-		's' => 150,
-		'd' => urlencode( $default ),
-	), $url );
-
-	return esc_url_raw( $url );
-} // relativity_get_default_header_image
+require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
