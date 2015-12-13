@@ -43,24 +43,22 @@ function relativity_register_color_scheme_customizer( WP_Customize_Manager $wp_c
 
 	$wp_customize->add_setting(
 		$key,
-		array (
+		array(
 			'default' => 'default',
 			'transport' => 'postMessage',
 		)
 	);
 
 	$wp_customize->add_control(
-		$key, ( array (
-			'label'    => $title,
-			'section'  => $section,
-			'settings' => $key,
-			'schemes'  => $schemes,
-			'default'  => 'default',
-			'type'     => 'radio',
-			'choices'  => $schemes,
-			)
-		)
-	);
+		$key, ( array(
+		'label'    => $title,
+		'section'  => $section,
+		'settings' => $key,
+		'schemes'  => $schemes,
+		'default'  => 'default',
+		'type'     => 'radio',
+		'choices'  => $schemes,
+	) ) );
 }
 
 
@@ -72,7 +70,7 @@ function relativity_register_color_scheme_customizer( WP_Customize_Manager $wp_c
  */
 function relativity_get_color_schemes() {
 
-	$schemes = array (
+	$schemes = array(
 		'default' => __( 'Default', 'relativity' ),
 		'blue' => __( 'Blue', 'relativity' ),
 		'red' => __( 'Red', 'relativity' ),
@@ -98,8 +96,8 @@ function relativity_filter_body_class_add_colorscheme( Array $classes ) {
 	$scheme		= get_theme_mod( 'relativity_color_scheme' );
 	$schemes	= relativity_get_color_schemes();
 
-	if ( empty ( $schemes ) || !array_key_exists ( $scheme, $schemes ) ) {
-		$scheme = "default";
+	if ( empty( $schemes ) || ! array_key_exists( $scheme, $schemes ) ) {
+		$scheme = 'default';
 	}
 
 	$classes[] = $scheme;
