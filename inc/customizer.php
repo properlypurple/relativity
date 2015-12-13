@@ -46,6 +46,7 @@ function relativity_register_color_scheme_customizer( WP_Customize_Manager $wp_c
 		array(
 			'default' => 'default',
 			'transport' => 'postMessage',
+			'sanitize_callback' => 'relativity_sanitize_color',
 		)
 	);
 
@@ -61,6 +62,12 @@ function relativity_register_color_scheme_customizer( WP_Customize_Manager $wp_c
 		) ) );
 }
 
+function relativity_sanitize_color( $value ) {
+	if ( ! in_array( $value, array( 'red', 'blue', 'teal', 'green' ) ) )
+		$value = 'default';
+
+	return $value;
+}
 
 /**
  * Get color schemes.
