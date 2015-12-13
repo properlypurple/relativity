@@ -4,11 +4,11 @@ Contributors: automattic
 
 Tags: translation-ready, custom-background, custom-menu, post-formats, threaded-comments
 
-Requires at least: 4.0  
-Tested up to: 4.2.2  
-Stable tag: 1.0.0  
-License: GPLv2 or later  
-License URI: http://www.gnu.org/licenses/gpl-2.0.html  
+Requires at least: 4.0
+Tested up to: 4.2.2
+Stable tag: 1.0.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 #Installation
 
@@ -18,20 +18,20 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 #Frequently Asked Questions
 
-1. Does this theme support any plugins?  
+1. Does this theme support any plugins?
 	Relativity includes support for Infinite Scroll in Jetpack.
-2. How to set the circular image in the header?  
+2. How to set the circular image in the header?
 	Go to customizer and add a header image(preferably square).
 
 #Changelog
 
 - 1.0 - Jun 30 2015 =
 	* Initial release
-- 1.0.1 - Jul 15 2015 = 
- 	* Fixed default header image not appearing
- 	* Removed extraneous tags
- 	* Updated screenshot
- 	* Fixed bitesized bugs
+- 1.0.1 - Jul 15 2015 =
+	 * Fixed default header image not appearing
+	 * Removed extraneous tags
+	 * Updated screenshot
+	 * Fixed bitesized bugs
 
 #Credits
 
