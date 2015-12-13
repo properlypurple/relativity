@@ -4,11 +4,11 @@ Contributors: automattic
 
 Tags: translation-ready, custom-background, custom-menu, post-formats, threaded-comments
 
-Requires at least: 4.0
-Tested up to: 4.2.2
-Stable tag: 1.0.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+- Requires at least: 4.3
+- Tested up to: 4.4
+- Stable tag: 1.1.0
+- License: GPLv2 or later
+- License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 #Installation
 
@@ -32,6 +32,17 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	 * Removed extraneous tags
 	 * Updated screenshot
 	 * Fixed bitesized bugs
+- 1.0.5 - Nov 20 2015 =
+	 * Major design update
+	 * Better code
+- 1.1.0 - Dec 13 2015
+	* Added option for colour schemes
+	* Fixed a lot of issues with WordPress coding standards
+	* Added a widget area in footer ( for social icons and stuff )
+	* Better styles for some post formats
+	* Better use of whitespace
+	* Heavily improved display of featured images
+	* Various tweaksk and fixes
 
 #Credits
 
