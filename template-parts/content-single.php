@@ -1,14 +1,19 @@
 <?php
 /**
+ * The template used for displaying post content in single.php
+ *
  * @package Relativity
  */
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php if(has_post_thumbnail() ){
+		<?php
+		if ( has_post_thumbnail() ) {
 				the_post_thumbnail();
-		} ?>
+		}
+		?>
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 		<div class="entry-meta">

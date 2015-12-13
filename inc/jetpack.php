@@ -8,7 +8,8 @@
 
 /**
  * Add theme support for Infinite Scroll.
- * See: https://jetpack.me/support/infinite-scroll/
+ *
+ * @see: https://jetpack.me/support/infinite-scroll/
  */
 function relativity_jetpack_setup() {
 	add_theme_support( 'infinite-scroll', array(

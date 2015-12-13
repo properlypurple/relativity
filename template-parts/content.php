@@ -1,20 +1,25 @@
 <?php
 /**
+ * This is the default content template
+ *
  * @package Relativity
  */
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php if(has_post_thumbnail() ){
+		<?php
+		if ( has_post_thumbnail() ) {
 				the_post_thumbnail();
-		} ?>
+		}
+		?>
 		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php relativity_posted_on(); ?>
-		</div><!-- .entry-meta -->
+			<div class="entry-meta">
+				<?php relativity_posted_on(); ?>
+			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 

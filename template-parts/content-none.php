@@ -6,6 +6,7 @@
  *
  * @package Relativity
  */
+
 ?>
 
 <section class="no-results not-found">
