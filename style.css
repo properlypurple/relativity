@@ -834,7 +834,9 @@ a:active {
 .site-content:before,
 .site-content:after,
 .site-footer:before,
-.site-footer:after {
+.site-footer:after,
+.hentry .wrap:before,
+.hentry .wrap:after {
 	content: "";
 	display: table;
 }
@@ -844,7 +846,9 @@ a:active {
 .comment-content:after,
 .site-header:after,
 .site-content:after,
-.site-footer:after {
+.site-footer:after,
+.hentry .wrap:before,
+.hentry .wrap:after{
 	clear: both;
 }
 
@@ -877,9 +881,15 @@ a:active {
 	background: #fafafa;
 	width:100%;
 	border-bottom: 1px solid #dedede;
-	padding: 0 30px;
+	padding: 0;
 	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
 	margin: 30px auto 20px;
+}
+
+.hentry .wrap {
+	background: #fafafa;
+	padding: 0 30px;
+	position: relative;
 }
 
 .sticky {
@@ -1196,9 +1206,16 @@ object {
 @media only screen and (min-width:769px) {
 	.container,
 	.hentry {
-	max-width: 940px;
-	padding-left: 4em;
-	padding-right: 4em;
+		max-width: 940px;
+	}
+
+	.hentry .wrap {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+
+	.hentry.has-post-thumbnail .wrap {
+		margin: -100px 2em 0
 	}
 }
 
