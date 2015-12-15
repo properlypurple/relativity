@@ -31,8 +31,8 @@ add_action( 'customize_register', 'relativity_register_color_scheme_customizer' 
  * Adding our colour scheme setting and control
  *
  * @wp-hook 	customize_register
- * @param	WP_Customize_Manager $wp_customize
- * @return	Void
+ * @param	WP_Customize_Manager $wp_customize the wp_customize object.
+ * @return	void
  */
 function relativity_register_color_scheme_customizer( WP_Customize_Manager $wp_customize ) {
 
@@ -63,8 +63,9 @@ function relativity_register_color_scheme_customizer( WP_Customize_Manager $wp_c
 }
 
 function relativity_sanitize_color( $value ) {
-	if ( ! in_array( $value, array( 'red', 'blue', 'teal', 'green' ) ) )
+	if ( ! in_array( $value, array( 'red', 'blue', 'teal', 'green' ) ) ) {
 		$value = 'default';
+	}
 
 	return $value;
 }
@@ -95,7 +96,7 @@ add_filter( 'body_class', 'relativity_filter_body_class_add_colorscheme' );
  *
  * @wp-hook	body_class
  * @uses	get_theme_mod, relativity_get_color_schemes
- * @param	Array $classes
+ * @param	Array $classes the default body classes.
  * @return	Array $classes
  */
 function relativity_filter_body_class_add_colorscheme( Array $classes ) {

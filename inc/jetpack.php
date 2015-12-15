@@ -9,6 +9,7 @@
 /**
  * Add theme support for Infinite Scroll.
  *
+ * @package Relativity
  * @see: https://jetpack.me/support/infinite-scroll/
  */
 function relativity_jetpack_setup() {
@@ -20,6 +21,12 @@ function relativity_jetpack_setup() {
 } // end function relativity_jetpack_setup
 add_action( 'after_setup_theme', 'relativity_jetpack_setup' );
 
+/**
+ * Function to render more posts for infinite scroll.
+ *
+ * @package Relativity
+ * @see: https://jetpack.me/support/infinite-scroll/
+ */
 function relativity_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
