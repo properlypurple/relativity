@@ -1496,7 +1496,9 @@ object {
 .blue .post-navigation .nav-previous,
 .blue .comment-navigation .nav-next,
 .blue .posts-navigation .nav-next,
-.blue .post-navigation .nav-next {
+.blue .post-navigation .nav-next,
+.blue .main-navigation li.current_page_item a,
+.blue .main-navigation li.current-menu-item a {
 	background: #1976d2; /* Dark */
 }
 
@@ -1526,7 +1528,9 @@ object {
 .green .post-navigation .nav-previous,
 .green .comment-navigation .nav-next,
 .green .posts-navigation .nav-next,
-.green .post-navigation .nav-next {
+.green .post-navigation .nav-next,
+.green .main-navigation li.current_page_item a,
+.green .main-navigation li.current-menu-item a {
 	background: #388e3c; /* Dark */
 }
 
@@ -1556,7 +1560,9 @@ object {
 .red .post-navigation .nav-previous,
 .red .comment-navigation .nav-next,
 .red .posts-navigation .nav-next,
-.red .post-navigation .nav-next {
+.red .post-navigation .nav-next,
+.red .main-navigation li.current_page_item a,
+.red .main-navigation li.current-menu-item a {
 	background: #d32f2f; /* Dark */
 }
 
@@ -1586,7 +1592,9 @@ object {
 .teal .post-navigation .nav-previous,
 .teal .comment-navigation .nav-next,
 .teal .posts-navigation .nav-next,
-.teal .post-navigation .nav-next {
+.teal .post-navigation .nav-next,
+.teal .main-navigation li.current_page_item a,
+.teal .main-navigation li.current-menu-item a {
 	background: #00796b; /* Dark */
 }
 
