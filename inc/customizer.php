@@ -64,6 +64,8 @@ function relativity_register_color_scheme_customizer( WP_Customize_Manager $wp_c
 
 /**
  * If colour is not in registerd colour schemes, return default.
+ *
+ * @param string $value Value of color scheme theme mod
  */
 function relativity_sanitize_color( $value ) {
 	if ( ! in_array( $value, relativity_get_color_schemes() ) ) {
