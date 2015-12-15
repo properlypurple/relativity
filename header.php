@@ -28,7 +28,7 @@
 
 				<?php     $header_image = get_header_image();     if ( ! empty( $header_image ) ) : ?>
 					<a class="site-logo" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							<img class="no-grav header-image" alt="" src="<?php header_image(); ?>" width="<?php echo esc_attr(get_custom_header()->width); ?>" height="<?php echo esc_attr(get_custom_header()->height); ?>" />
+							<img class="no-grav header-image" alt="" src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" />
 					</a>
 				<?php endif; ?>
 
