@@ -46,6 +46,8 @@ Tags: translation-ready, custom-background, custom-menu, post-formats, threaded-
 - 1.1.4 - Dec 16 2015
 	* Use travis for automated testing
 	* Fixed minor annoying bugs
+- 1.1.5 - Dec 17 2015
+	* Fixed annoying transition bugs on Webkit and Blink based browsers
 
 #Credits
 
