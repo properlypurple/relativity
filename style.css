@@ -44,10 +44,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
-* {
-	transition: all .2s ease-in;
-}
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -522,6 +518,7 @@ input[type="submit"] {
 	line-height: 1;
 	padding: .6em 1em .4em;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	transition: all .2s ease-in-out;
 }
 
 button:hover,
@@ -553,6 +550,7 @@ textarea {
 	color: #666;
 	border: 1px solid #ccc;
 	border-radius: 3px;
+	transition: all .2s ease-in-out;
 }
 
 input[type="text"]:focus,
@@ -615,6 +613,7 @@ a.site-logo:hover {
 a {
 	color: #3c3c3c;
 	text-decoration: none;
+	transition: all .2s ease-in-out;
 }
 a:visited {
 	/*color: #1c1c1c;*/
@@ -625,6 +624,7 @@ a:focus,
 a:active {
 	color: #1d1d1d;
 	border-bottom: 1px solid #3c3c3c;
+	transition: all .2s ease-in-out;
 }
 
 a:focus {
@@ -648,6 +648,7 @@ a:active {
 	position: relative;
 	width: 100%;
 	z-index: 2;
+	transition: all .2s ease-in-out;
 }
 .main-navigation ul {
 	display: block;
