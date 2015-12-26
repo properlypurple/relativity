@@ -68,7 +68,7 @@ function relativity_register_color_scheme_customizer( WP_Customize_Manager $wp_c
  * @param string $value Value of color scheme theme mod.
  */
 function relativity_sanitize_color( $value ) {
-	if ( ! in_array( $value, relativity_get_color_schemes() ) ) {
+	if ( ! array_key_exists( $value, relativity_get_color_schemes() ) ) {
 		$value = 'default';
 	}
 
@@ -106,7 +106,7 @@ add_filter( 'body_class', 'relativity_filter_body_class_add_colorscheme' );
  */
 function relativity_filter_body_class_add_colorscheme( Array $classes ) {
 
-	$scheme		= get_theme_mod( 'relativity_color_scheme' );
+	$scheme		= get_theme_mod( 'relativity_color_scheme' ) ? get_theme_mod( 'relativity_color_scheme' ) : 'default' ;
 	$schemes	= relativity_get_color_schemes();
 
 	if ( empty( $schemes ) || ! array_key_exists( $scheme, $schemes ) ) {
