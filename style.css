@@ -324,7 +324,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 42px;
+	font-size: 36px;
 }
 
 h2 {
@@ -878,12 +878,12 @@ a:active {
 	border-bottom: 1px solid #dedede;
 	padding: 0;
 	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
-	margin: 30px auto 20px;
+	margin: 2em auto 1.25em;
 }
 
 .hentry .wrap {
 	background: #fafafa;
-	padding: 0 30px;
+	padding: 0 2em;
 	position: relative;
 }
 
@@ -896,8 +896,8 @@ a:active {
 
 .entry-header {
 	text-align: center;
-	padding: 20px;
-	margin-bottom: 15px;
+	padding: 1.25em;
+	margin-bottom: 1em;
 }
 
 .entry-title {
@@ -917,14 +917,14 @@ a:active {
 .entry-footer {
 	color: #888;
 	font-size: 12px;
-	padding-bottom: 40px;
+	padding-bottom: 2.5em;
 	text-align: center;
 }
 
 .entry-footer span{
 	display: block;
 	text-align: center;
-	padding: 6px 6px 0;
+	padding: 0.5em 0.5em 0;
 }
 
 .byline,
@@ -1014,7 +1014,7 @@ a:active {
 .entry-pings {
 	background-color: #f4f4f4;
 	border: 1px solid #e7e7e7;
-	margin-bottom: 24px;
+	margin-bottom: 1.5em;
 }
 
 .entry-comments ol,
@@ -1024,20 +1024,20 @@ a:active {
 }
 
 .comment-list {
-	margin-bottom: 24px;
+	margin-bottom: 1.5em;
 }
 
 .comment-respond,
 .entry-pings {
-	padding: 40px 40px 16px;
+	padding: 2.5em 2.5em 1em;
 }
 
 .entry-comments {
-	padding: 40px 0px 16px;
+	padding: 2.5em 0 1em;
 }
 
 .comment-header {
-	font-size: 16px;
+	font-size: 1em;
 }
 
 li.comment {
@@ -1051,17 +1051,17 @@ li.comment {
 }
 
 .comment-list li {
-	margin-top: 24px;
-	padding: 32px;
+	margin-top: 1.5em;
+	padding: 2em;
 }
 
 .comment-list li li {
-	margin-right: -32px;
+	margin-right: -2em;
 }
 
 .comment-respond label {
 	display: block;
-	margin-right: 12px;
+	margin-right: 0.75em;
 }
 
 .entry-comments .comment-author {
@@ -1070,7 +1070,7 @@ li.comment {
 
 .comment .avatar {
 	border-radius: 100%;
-	margin: 0 16px 24px 0;
+	margin: 0 1em 1.5em 0;
 	float: left;
 }
 
@@ -1079,8 +1079,8 @@ li.comment {
 }
 
 .form-allowed-tags {
-	font-size: 14px;
-	padding: 24px;
+	font-size: 1em;
+	padding: 1.5em;
 }
 
 /*--------------------------------------------------------------
@@ -1118,7 +1118,7 @@ li.comment {
 .footer-widgets .menu a {
 	display: block;
 	color: #ffffff;
-	padding: 14px;
+	padding: 1em;
 	border: none;
 }
 
@@ -1131,7 +1131,7 @@ li.comment {
 	background: #2d2d2d;
 	color:#fafafa;
 	text-align: center;
-	padding: 30px 0;
+	padding: 2em 0;
 }
 
 
@@ -1265,7 +1265,7 @@ object {
 	}
 
 	.hentry.has-post-thumbnail .wrap {
-		margin: -100px 2em 0
+		margin: -6em 2em 0
 	}
 }
 
@@ -1281,132 +1281,132 @@ object {
 	.comments-area,
 	.widget-areas-inner,
 	.page-header {
-	margin-left: auto;
-	margin-right: auto;
-	width: 780px;
-	max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		width: 780px;
+		max-width: 100%;
 	}
 
 	.site-branding {
-	padding-bottom: 1.6em;
+		padding-bottom: 1.6em;
 	}
 
 	.main-navigation {
-	background: #3d3d3d;
+		background: #3d3d3d;
 	}
 
 	.main-navigation {
-	text-align: center;
+		text-align: center;
 	}
 
 	.main-navigation div > ul:first-child {
-	margin-left: auto;
+		margin-left: auto;
 	}
 
 	.main-navigation li {
-	display: inline-block;
-	position: relative;
+		display: inline-block;
+		position: relative;
 	}
 
 	.main-navigation a {
-	border: 0;
-	font-size: 0.8125em;
-	padding: 1.2em 1em;
+		border: 0;
+		font-size: 0.8125em;
+		padding: 1.2em 1em;
 	}
 
 	.main-navigation ul ul {
-	background: #3d3d3d;
-	box-shadow: 0 0px 3px rgba(0, 0, 0, 0.2);
-	display: none;
-	float: left;
-	left: 0;
-	padding-top: 0;
-	padding-bottom: 0;
-	padding-left: 0;
-	position: absolute;
-	top: 2.8em;
-	z-index: 99999;
+		background: #3d3d3d;
+		box-shadow: 0 0px 3px rgba(0, 0, 0, 0.2);
+		display: none;
+		float: left;
+		left: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+		padding-left: 0;
+		position: absolute;
+		top: 2.8em;
+		z-index: 99999;
 	}
 
 	.main-navigation ul ul li {
-	margin-right: 0;
+		margin-right: 0;
 	}
 
 	.main-navigation ul ul ul {
-	padding-left: 0;
-	left: 100%;
-	top: 0;
+		padding-left: 0;
+		left: 100%;
+		top: 0;
 	}
 
 	.main-navigation ul ul a,
 	.main-navigation ul ul ul a,
 	.main-navigation ul ul ul ul a {
-	border-bottom: 1px solid #1d1d1d;
-	padding-left: 1.5em;
+		border-bottom: 1px solid #1d1d1d;
+		padding-left: 1.5em;
 	}
 
 	.main-navigation ul ul a {
-	padding: .75em 1.5em;
-	text-align: left;
-	width: 200px;
+		padding: .75em 1.5em;
+		text-align: left;
+		width: 200px;
 	}
 
 	.main-navigation ul li:hover > ul,
 	.main-navigation ul li.focus > ul {
-	display: block;
+		display: block;
 	}
 
 	.entry-content,
 	.comment-content {
-	font-size: 18px;
+		font-size: 18px;
 	}
 
 	.entry-meta {
-	font-size: 16px;
+		font-size: 16px;
 	}
 
 	.entry-title,
 	.page-title {
-	font-size: 30px;
+		font-size: 30px;
 	}
 
 	footer.entry-meta span {
-	clear: none;
-	display: inline-block;
-	margin-right: 1.5em;
-	padding: .375em 0;
+		clear: none;
+		display: inline-block;
+		margin-right: 1.5em;
+		padding: .375em 0;
 	}
 
 	footer.entry-meta span:last-child {
-	margin-right: 0;
+		margin-right: 0;
 	}
 
 	.comments-title {
-	font-size: 26px;
+		font-size: 26px;
 	}
 
 	.site-footer .sep {
-	clear: none;
-	display: inline-block;
-	height: auto;
-	visibility: visible;
-	width: auto;
+		clear: none;
+		display: inline-block;
+		height: auto;
+		visibility: visible;
+		width: auto;
 	}
 
 	.comments-area ul.children {
-	margin-left: 3em;
+		margin-left: 3em;
 	}
 
 	.format-link .entry-title a:after {
-	font-size: 36px;
+		font-size: 36px;
 	}
 
 	.has-header .site-branding {
-	padding: 1.5em 0;
+		padding: 1.5em 0;
 	}
 
 	.entry-format:before {
-	font-size: 24px;
+		font-size: 24px;
 	}
 
 }
@@ -1426,61 +1426,61 @@ object {
 	}
 
 	.site-title {
-	font-size: 42px;
-	margin: 0 auto;
-	max-width: 100%;
+		font-size: 42px;
+		margin: 0 auto;
+		max-width: 100%;
 	}
 
 	.site-description {
-	font-size: 1em;
-	margin: 0 auto;
-	max-width: 100%;
+		font-size: 1em;
+		margin: 0 auto;
+		max-width: 100%;
 	}
 
 	.main-navigation a {
-	font-size: 16px;
+		font-size: 16px;
 	}
 
 	.widget_search .search-submit {
-	display: none;
+		display: none;
 	}
 
 	.widget_search .search-field {
-	border-radius: 3px;
-	margin: 0 auto;
-	padding-top: .75em;
-	padding-bottom: .75em;
+		border-radius: 3px;
+		margin: 0 auto;
+		padding-top: .75em;
+		padding-bottom: .75em;
 	}
 
 	.entry-content,
 	.comment-content,
 	code {
-	font-size: 18px;
+		font-size: 18px;
 	}
 
 	.entry-meta {
-	font-size: 20px;
+		font-size: 20px;
 	}
 
 	.entry-title,
 	.page-title {
-	font-size: 32px;
+		font-size: 32px;
 	}
 
 	.comments-title {
-	font-size: 30px;
+		font-size: 30px;
 	}
 
 	.format-link .entry-title a:after {
-	font-size: 48px;
+		font-size: 48px;
 	}
 
 	.has-header .site-branding {
-	padding: 6em 0 1.5em;
+		padding: 6em 0 1.5em;
 	}
 
 	.main-navigation ul ul {
-	top: 3.9em;
+		top: 3.9em;
 	}
 
 }
