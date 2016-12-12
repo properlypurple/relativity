@@ -1393,7 +1393,7 @@ object {
 	}
 
 	.main-navigation ul li:hover > ul,
-	.main-navigation ul li.focus > ul {
+	.main-navigation ul li:focus > ul {
 		display: block;
 	}
 
