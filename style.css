@@ -583,7 +583,8 @@ textarea {
 
 .site-header h1,
 .site-header h2,
-.site-header a {
+.site-header a,
+.site-header a:focus {
 	color: #fafafa;
 	text-align: center;
 }
@@ -618,7 +619,7 @@ a:hover,
 a:focus,
 a:active {
 	color: #1d1d1d;
-	border-bottom: 1px solid #3c3c3c;
+	border-bottom: 1px dotted #3c3c3c;
 }
 
 a:focus {
@@ -696,7 +697,7 @@ a:active {
 	display: block;
 	}
 	.menu-toggle {
-	background-color: rgba(10,10,10,0.3);
+	background-color: transparent;
 	color: #fff;
 	font-size: 1.25em;
 	margin: 0;
@@ -921,12 +922,12 @@ a:active {
 
 .entry-content::after,
 .entry-content::before {
-	width: 50%;
+	width: 100%;
 	height: 1px;
 	margin: 0 auto 24px;
 	position: relative;
 	content: "";
-	border-top: 1px dotted #999;
+	border-top: 1px dotted #ccc;
 }
 
 .entry-footer {
@@ -961,6 +962,17 @@ a:active {
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.page-links a {
+	padding: 0.3em 0.6em;
+	background: #2d2d2d;
+	color: #ffffff;
+}
+
+.page-links a:hover {
+	border: none;
+	opacity: 0.85;
 }
 
 /*--------------------------------------------------------------
@@ -1162,6 +1174,10 @@ li.comment {
 
 .site-footer a {
 	color: #fafafa;
+}
+
+.site-footer a:hover {
+	border-color: #ffffff;
 }
 
 /*--------------------------------------------------------------
@@ -1540,7 +1556,8 @@ object {
 .blue.archive .format-quote,
 .blue .main-navigation li.current_page_item a,
 .blue .main-navigation li.current-menu-item a,
-.blue .nav-links a {
+.blue .nav-links a,
+.blue .page-links a {
 	background: #1976d2; /* Dark */
 }
 
@@ -1567,7 +1584,8 @@ object {
 .green.archive .format-quote,
 .green .main-navigation li.current_page_item a,
 .green .main-navigation li.current-menu-item a,
-.green .nav-links a {
+.green .nav-links a,
+.green .page-links a {
 	background: #388e3c; /* Dark */
 }
 
@@ -1594,7 +1612,8 @@ object {
 .red.archive .format-quote,
 .red .main-navigation li.current_page_item a,
 .red .main-navigation li.current-menu-item a,
-.red .nav-links a {
+.red .nav-links a,
+.teal .page-links a {
 	background: #d32f2f; /* Dark */
 }
 
@@ -1621,7 +1640,8 @@ object {
 .teal.archive .format-quote,
 .teal .main-navigation li.current_page_item a,
 .teal .main-navigation li.current-menu-item a,
-.teal .nav-links a {
+.teal .nav-links a,
+.teal .page-links a {
 	background: #00796b; /* Dark */
 }
 
