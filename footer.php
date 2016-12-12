@@ -13,9 +13,14 @@
 
 	<?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
 	<div class="footer-widgets">
-		<aside id="secondary" class="widget-area" role="complementary">
-		<?php dynamic_sidebar( 'footer-1' ); ?>
-		</aside><!-- #secondary -->
+		<div class="wrap">
+			<aside id="secondary-1" class="widget-area" role="complementary">
+				<?php dynamic_sidebar( 'footer-1' ); ?>
+			</aside><!-- #secondary 1 -->
+			<aside id="secondary-2" class="widget-area" role="complementary">
+				<?php dynamic_sidebar( 'footer-2' ); ?>
+			</aside><!-- #secondary 2 -->
+		</div>
 	</div>
 	<?php endif; ?>
 
