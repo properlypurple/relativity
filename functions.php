@@ -74,6 +74,16 @@ if ( ! function_exists( 'relativity_setup' ) ) :
 			'default-color' => 'efefef',
 			'default-image' => '',
 		) ) );
+
+
+		/**
+	  * Add support for Gutenberg wide images.
+	  *
+	  * @link https://wordpress.org/gutenberg/handbook/reference/theme-support/
+	  */
+	 add_theme_support( 'gutenberg', array(
+      'wide-images' => true,
+		) );
 	}
 endif; // End relativity_setup.
 add_action( 'after_setup_theme', 'relativity_setup' );
