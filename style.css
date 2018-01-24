@@ -579,6 +579,25 @@ textarea {
 	padding-top: 40px;
 	background: #2d2d2d;
 	color: #fafafa;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+}
+
+.site-header.has-header-image::before {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+	content: ' ';
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+.site-branding {
+	z-index: 9;
+	position: relative;
 }
 
 .site-header h1,
@@ -593,13 +612,15 @@ textarea {
 	color: #fafafa;
 }
 
-.site-header img {
+.site-logo .no-grav {
 	border-radius: 50%;
 }
 
 a.site-logo:hover {
 	border: none;
 }
+
+
 
 /*--------------------------------------------------------------
 # Navigation

@@ -21,9 +21,8 @@
  */
 function relativity_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'relativity_custom_header_args', array(
-		'default-image'          => relativity_get_default_header_image(),
-		'width'                  => 150,
-		'height'                 => 150,
+		'width'                  => 2000,
+		'height'                 => 500,
 		'flex-height'            => true,
 		'flex-width'             => true,
 	) ) );
@@ -52,3 +51,34 @@ function relativity_get_default_header_image() {
 
 	return esc_url_raw( $url );
 } // relativity_get_default_header_image
+
+/* Reimplement gravatar header with custom logo, and use header image as background. */
+
+function relativity_custom_logo_setup() {
+
+	add_theme_support( 'custom-logo', array(
+		'height'      => 150,
+		'width'       => 150,
+		'flex-width' => true,
+		'header-text' => array( 'site-title', 'site-description' ),
+	) );
+
+}
+add_action( 'after_setup_theme', 'relativity_custom_logo_setup' );
+
+function relativity_default_theme_logo() {
+
+	$html = '<a class="site-logo" title="'. esc_attr( get_bloginfo( 'name', 'display' ) ) .'" href="'. esc_url( home_url( '/' ) ) .'" rel="home">';
+	$html .= '<img class="no-grav header-image" alt="" src="'. relativity_get_default_header_image() .'" width="150" height="150" /></a>';
+	echo $html;
+}
+
+function relativity_the_custom_logo() {
+
+	if ( has_custom_logo() ) {
+		the_custom_logo();
+	} else {
+		relativity_default_theme_logo();
+	}
+
+}

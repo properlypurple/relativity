@@ -22,16 +22,15 @@
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'relativity' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
+	<?php if ( '' != get_theme_mod( 'header_image' ) ): ?>
+		<header id="masthead" class="site-header has-header-image" role="banner" style="background-image: url(<?php echo get_header_image()?>)">
+	<?php else: ?>
+		<header id="masthead" class="site-header" role="banner">
+	<?php endif; ?>
 		<div class="site-branding">
 			<div class="container">
 
-				<?php     $header_image = get_header_image();     if ( ! empty( $header_image ) ) : ?>
-					<a class="site-logo" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							<img class="no-grav header-image" alt="" src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" />
-					</a>
-				<?php endif; ?>
-
+				<?php	relativity_the_custom_logo() ?>
 
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
