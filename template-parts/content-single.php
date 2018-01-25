@@ -32,6 +32,8 @@
 			?>
 		</div><!-- .entry-content -->
 
+		<?php if ( function_exists( 'jetpack_author_bio' ) ) jetpack_author_bio(); ?>
+
 		<footer class="entry-footer">
 			<?php relativity_entry_footer(); ?>
 		</footer><!-- .entry-footer -->

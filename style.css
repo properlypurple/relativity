@@ -1107,6 +1107,39 @@ a:active {
 	margin: 0 0 1em;
 }
 
+/* Author bio from Jetpack */
+
+.single .entry-author {
+	padding: 10px 0 10px;
+	border-bottom: 1px dotted #cccccc;
+}
+.single .entry-author .author-heading {
+	float: left;
+}
+.single .entry-author .author-title {
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+.single .entry-author .author-title .author-name {
+	font-size: 32px;
+	display: block;
+}
+
+.single .entry-author .author-avatar {
+	float: left;
+	margin-right: 18px;
+	margin-bottom: 8px;
+}
+
+.single .entry-author img {
+	border-radius: 50%;
+}
+
+.single .entry-author .author-bio {
+	clear: both;
+}
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
