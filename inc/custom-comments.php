@@ -28,18 +28,20 @@ function relativity_custom_comments( $comment, $args, $depth ) {
 				<header class="comment-header">
 					<p class="comment-author">
 						<?php echo get_avatar( $comment, 48 ); ?>
-								<span class="author-name"><?php comment_author(); ?></span><span class="says">says</span>
+								<span class="author-name"><?php echo get_comment_author_link( $comment->comment_ID ); ?></span><span class="says"> says</span>
 							</p>
 
 					<p class="comment-meta">
-						<time <?php comment_time( 'c' ); ?> class="comment-time">
-							<span class="date">
-							<?php comment_date(); ?>
-							</span>
-							<span class="time">
-							<?php comment_time(); ?>
-							</span>
-						</time>
+						<a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>">
+							<time <?php comment_time( 'c' ); ?> class="comment-time">
+								<span class="date">
+								<?php comment_date(); ?>
+								</span>
+								<span class="time">
+								<?php comment_time(); ?>
+								</span>
+							</time>
+						</a>
 					</p>
 				</header>
 
