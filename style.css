@@ -581,7 +581,6 @@ textarea {
 	background: #2d2d2d;
 	color: #fafafa;
 	background-size: cover;
-	overflow: hidden;
 	position: relative;
 }
 
@@ -744,6 +743,43 @@ a:active {
 	display: none;
 	}
 }
+
+
+/* Social menu */
+
+.jetpack-social-navigation {
+	z-index: 9;
+	position: relative;
+}
+
+.site-header .jetpack-social-navigation {
+	margin-bottom: 1.8em;
+}
+
+.jetpack-social-navigation ul.menu {
+	text-align: center;
+	margin: 8px auto 16px;
+}
+
+.jetpack-social-navigation-genericons ul li {
+	padding: 8px;
+	border-radius: 50%;
+	background: #ffffff;
+	margin: 0 1px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+	opacity: 0.8;
+}
+
+.jetpack-social-navigation-genericons li:hover {
+	opacity: 1;
+}
+
+.jetpack-social-navigation-genericons li a::before {
+	color: #2d2d2d;
+	font-size: 1.2em;
+}
+
+/* Comment navigation */
 
 .site-main .comment-navigation,
 .site-main .posts-navigation,
@@ -1459,7 +1495,7 @@ object {
 	}
 
 	.site-branding {
-		padding-bottom: 1.6em;
+		padding-bottom: 1em;
 	}
 
 	.main-navigation {
@@ -1702,6 +1738,10 @@ object {
 	background: #2196f3; /* Light */
 }
 
+.blue .jetpack-social-navigation-genericons li a::before {
+	color: #1976d2;
+}
+
 /* Green *************************/
 
 .green body {
@@ -1730,6 +1770,10 @@ object {
 	background: #4caf50; /* Light */
 }
 
+.green .jetpack-social-navigation-genericons li a::before {
+	color: #4caf50;
+}
+
 /* Red *************************/
 
 .red body {
@@ -1743,7 +1787,7 @@ object {
 .red .main-navigation li.current_page_item a,
 .red .main-navigation li.current-menu-item a,
 .red .nav-links a,
-.teal .page-links a {
+.red .page-links a {
 	background: #d32f2f; /* Dark */
 }
 
@@ -1756,6 +1800,10 @@ object {
 .red .main-navigation ul ul,
 .red .footer-widgets {
 	background: #f44336; /* Light */
+}
+
+.red .jetpack-social-navigation-genericons li a::before {
+	color: #f44336;
 }
 
 /* Teal *************************/
@@ -1784,4 +1832,8 @@ object {
 .teal .main-navigation ul ul,
 .teal .footer-widgets {
 	background: #009688; /* Light */
+}
+
+.teal .jetpack-social-navigation-genericons li a::before {
+	color: #009688;
 }

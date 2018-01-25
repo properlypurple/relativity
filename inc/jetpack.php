@@ -19,7 +19,12 @@ function relativity_jetpack_setup() {
 		'footer'    => 'page',
 	) );
 
-
+	/**
+	 * Add theme support for Content Options.
+	 *
+	 * @package Relativity
+	 * @see: https://jetpack.com/support/content-options/
+	 */
 	add_theme_support( 'jetpack-content-options', array(
 	  'blog-display'       => array( 'content', 'excerpt' ), // the default setting of the theme: 'content', 'excerpt' or array( 'content', 'excerpt' ) for themes mixing both display.
 	  'author-bio'         => true, // display or not the author bio: true or false.
@@ -41,6 +46,16 @@ function relativity_jetpack_setup() {
 	    'page-default'    => false, // the default setting of the featured image on single pages, if it's being displayed or not: true or false (only required if false).
 	  ),
 	) );
+
+	/**
+	 * Add theme support for Social menu.
+	 *
+	 * @package Relativity
+	 * @see: https://jetpack.com/support/social-menu/
+	 */
+
+	add_theme_support( 'jetpack-social-menu' );
+	
 } // end function relativity_jetpack_setup
 add_action( 'after_setup_theme', 'relativity_jetpack_setup' );
 

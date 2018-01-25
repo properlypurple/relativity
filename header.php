@@ -37,6 +37,8 @@
 			</div>
 		</div><!-- .site-branding -->
 
+		<?php if ( function_exists( 'jetpack_social_menu' ) ) jetpack_social_menu(); ?>
+
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'relativity' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'container_class' => 'primary-menu-container' ) ); ?>
