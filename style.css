@@ -409,6 +409,7 @@ big {
 --------------------------------------------------------------*/
 html {
 	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 *,
@@ -1074,15 +1075,23 @@ a:active {
 .wp-block-quote {
 	font-size: 20px;
 	font-style: italic;
-	padding-left: 85px;
+	padding-top: 85px;
 	font-family: 'Vollkorn', serif;
 	font-style: italic;
 
-	background: url(images/quote.svg) no-repeat top left;
+	background: url(images/quote.svg) no-repeat top center;
 }
 .wp-block-quote	cite {
 	font-size: 14px;
 	margin-top: 0;
+}.wp-block-quote {
+	font-size: 20px;
+	font-style: italic;
+	padding-top: 85px;
+	font-family: 'Vollkorn', serif;
+	font-style: italic;
+
+	background: url(images/quote.svg) no-repeat top center;
 }
 .wp-block-quote	cite::before {
 	content: "― ";
@@ -1389,6 +1398,12 @@ object {
 		margin-right: -135px;
 		width: calc( 100% + 270px);
 		max-width: calc( 100% + 270px );
+	}
+
+	.wp-block-quote {
+		padding-top: 0;
+		padding-left: 85px;
+		background-position: top left;
 	}
 }
 
