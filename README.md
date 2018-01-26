@@ -2,11 +2,11 @@
 
 Contributors: automattic
 
-Tags: translation-ready, custom-background, custom-menu, post-formats, threaded-comments
+Tags: translation-ready, custom-background, custom-menu, post-formats, threaded-comments, custom-logo
 
-- Requires at least: 4.3
-- Tested up to: 4.4
-- Stable tag: 1.1.4
+- Requires at least: 4.8
+- Tested up to: 4.9.2
+- Stable tag: 2.0
 - License: GPLv2 or later
 - License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,9 +23,9 @@ For a demo of this theme in action, go [here](http://demo.magikpress.com/relativ
 #Frequently Asked Questions
 
 1. Does this theme support any plugins?
-	Relativity includes support for Infinite Scroll in Jetpack.
+	Relativity includes support for Infinite Scroll, content options, and social menu in Jetpack. It also supports all default Gutenberg blocks
 2. How to set the circular image in the header?
-	Go to customizer and add a header image(preferably square).
+	It will pull in the admin's gravatar by default. For a custom image, go to customizer and add a custom logo under 'Site Identity'.
 
 #Changelog
 
@@ -52,6 +52,13 @@ For a demo of this theme in action, go [here](http://demo.magikpress.com/relativ
 	* Fixed minor annoying bugs
 - 1.1.5 - Dec 17 2015
 	* Fixed annoying transition bugs on Webkit and Blink based browsers
+- 2.0 - Jan 26 2018
+	* Fixed bugs with footer widgets, added two widget areas in Footer
+	* Added support for more Jetpack features, social menu, content options, author bio.
+	* Added support for Gutenberg blocks
+	* Improved styling of posts, footer, header elements.
+	* Added support for custom logo, moved header image to provide background of header area
+	* Small bugfixes with display of elements in places.
 
 #Credits
 
