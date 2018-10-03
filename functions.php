@@ -77,13 +77,13 @@ if ( ! function_exists( 'relativity_setup' ) ) :
 
 
 		/**
-	  * Add support for Gutenberg wide images.
+	  * Add support for new editor features in upcoming WordPress 5.0 .
 	  *
 	  * @link https://wordpress.org/gutenberg/handbook/reference/theme-support/
 	  */
-	 add_theme_support( 'gutenberg', array(
-      'wide-images' => true,
-		) );
+	 add_theme_support( 'align-wide' );
+
+	 //add_theme_support( 'wp-block-styles' );
 	}
 endif; // End relativity_setup.
 add_action( 'after_setup_theme', 'relativity_setup' );
