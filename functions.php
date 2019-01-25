@@ -77,13 +77,17 @@ if ( ! function_exists( 'relativity_setup' ) ) :
 
 
 		/**
-	  * Add support for Gutenberg wide images.
+	  * Add support for Gutenberg features.
 	  *
 	  * @link https://wordpress.org/gutenberg/handbook/reference/theme-support/
 	  */
-	 add_theme_support( 'gutenberg', array(
-      'wide-images' => true,
-		) );
+	 add_theme_support( 'align-wide' );
+	 add_theme_support( 'editor-color-palette',
+			'#00796b',
+			'#1976d2',
+			'#388e3c',
+			'#d32f2f'
+		);
 	}
 endif; // End relativity_setup.
 add_action( 'after_setup_theme', 'relativity_setup' );
