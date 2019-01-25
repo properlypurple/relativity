@@ -77,3 +77,4 @@ It will pull in the admin's gravatar by default. For a custom image, go to custo
 * Based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2015 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
 * Image in demo under CC0 https://pixabay.com/en/typewriter-retro-vintage-old-498204/
+* Cat image in screenshot under CC-by http://flickr.com/photos/titrans/, (C) Quatre Mains
