@@ -89,19 +89,39 @@ if ( ! function_exists( 'relativity_setup' ) ) :
 			'color' => '#00796b',
 		),
 		array(
+			'name' => __( 'Light Teal', 'relativity' ),
+			'slug' => 'light-teal',
+			'color' => '#009688',
+		),
+		array(
 			'name' => __( 'Blue', 'relativity' ),
 			'slug' => 'blue',
 			'color' => '#1976d2',
 		),
 		array(
-			'name' => __( 'green', 'relativity' ),
+			'name' => __( 'Light Blue', 'relativity' ),
+			'slug' => 'light-blue',
+			'color' => '#2196f3',
+		),
+		array(
+			'name' => __( 'Green', 'relativity' ),
 			'slug' => 'green',
 			'color' => '#388e3c',
+		),
+		array(
+			'name' => __( 'Light Green', 'relativity' ),
+			'slug' => 'light-green',
+			'color' => '#4caf50',
 		),
 		array(
 			'name' => __( 'Red', 'relativity' ),
 			'slug' => 'red',
 			'color' => '#d32f2f',
+		),
+		array(
+			'name' => __( 'Light Red', 'relativity' ),
+			'slug' => 'light-red',
+			'color' => '#f44336',
 		),
 		array(
 			'name' => __( 'Off White', 'relativity' ),
