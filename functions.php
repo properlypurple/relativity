@@ -82,12 +82,39 @@ if ( ! function_exists( 'relativity_setup' ) ) :
 	  * @link https://wordpress.org/gutenberg/handbook/reference/theme-support/
 	  */
 	 add_theme_support( 'align-wide' );
-	 add_theme_support( 'editor-color-palette',
-			'#00796b',
-			'#1976d2',
-			'#388e3c',
-			'#d32f2f'
-		);
+	add_theme_support( 'editor-color-palette', array(
+		array(
+			'name' => __( 'Teal', 'relativity' ),
+			'slug' => 'teal',
+			'color' => '#00796b',
+		),
+		array(
+			'name' => __( 'Blue', 'relativity' ),
+			'slug' => 'blue',
+			'color' => '#1976d2',
+		),
+		array(
+			'name' => __( 'green', 'relativity' ),
+			'slug' => 'green',
+			'color' => '#388e3c',
+		),
+		array(
+			'name' => __( 'Red', 'relativity' ),
+			'slug' => 'red',
+			'color' => '#d32f2f',
+		),
+		array(
+			'name' => __( 'Off White', 'relativity' ),
+			'slug' => 'off-white',
+			'color' => '#fafafa',
+		),
+		array(
+			'name' => __( 'Light Black', 'relativity' ),
+			'slug' => 'light-black',
+			'color' => '#2d2d2d',
+		),
+	) );
+		
 	}
 endif; // End relativity_setup.
 add_action( 'after_setup_theme', 'relativity_setup' );

@@ -1108,6 +1108,10 @@ a:active {
 	padding: 0;
 }
 
+.wp-block-gallery {
+	margin-left: 0; /* reset left margin applied to lists */
+}
+
 .wp-block-quote {
 	font-size: 20px;
 	font-style: italic;
