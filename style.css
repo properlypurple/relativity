@@ -632,9 +632,6 @@ a {
 	color: #3c3c3c;
 	text-decoration: none;
 }
-a:visited {
-	/*color: #1c1c1c;*/
-}
 
 a:hover,
 a:focus,
@@ -860,13 +857,11 @@ a:active {
 # Alignments
 --------------------------------------------------------------*/
 .alignleft {
-	display: inline;
 	float: left;
 	margin-right: 1.5em;
 }
 
 .alignright {
-	display: inline;
 	float: right;
 	margin-left: 1.5em;
 }
@@ -1092,7 +1087,7 @@ a:active {
 }
 
 .alignwide {
-	width: 100%
+	width: 100%;
 	max-width: 100%;
 }
 
@@ -1636,20 +1631,6 @@ object {
 
 }
 @media screen and ( min-width: 1250px ) {
-	.container,
-	.site-branding,
-	.menu,
-	.site-info,
-	.hentry,
-	.nav-links,
-	#nav-below.paging-navigation,
-	#nav-below.post-navigation,
-	.comments-area,
-	.widget-areas-inner,
-	.page-header {
-	/*max-width: 1140px;*/
-	}
-
 	.site-title {
 		font-size: 42px;
 		margin: 0 auto;
