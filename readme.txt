@@ -27,12 +27,22 @@ Relativity includes support for Infinite Scroll, content options, and social men
 = How to set the circular image in the header? =
 It will pull in the admin's gravatar by default. For a custom image, go to customizer and add a custom logo under 'Site Identity'.
 
+= I set a custom logo, and it's not round anymore.
+That's intentional, because you might want a different shaped logo. If your image is square, add this css code.
+`.custom-logo { border-radius: 50%; }`
+
 == Changelog ==
 
 = 2.1 - Jan 2019 =
-* Tested with WordPress 5.0
+* Tested with WordPress 5.0+
 * Removed code supporting older Gutenberg versions
+* Fixed some styling issues for the new WordPress editor blocks
+* Added in custom colours for the new WordPress editor
 * Better readme
+* Added new theme support tags
+* Updated all links to https
+* Updated screenshot, upped kitty quotient
+* General cleanup
 
 = 2.0 - Jan 26 2018 =
 * Fixed bugs with footer widgets, added two widget areas in Footer
