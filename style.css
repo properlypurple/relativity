@@ -1091,6 +1091,12 @@ a:active {
 	max-width: 100%;
 }
 
+.wp-block-media-text.alignwide {
+	margin: auto;
+	width: 100%;
+	max-width: 100%;
+}
+
 .alignfull {
 	margin-left: 50%;
 	width: 100vw;
@@ -1142,6 +1148,88 @@ a:active {
 	font-size: 32px;
 	margin: 0 0 1em;
 }
+
+/* color schemes from editor */
+.has-off-white-background-color {
+	background: #fafafa;
+}
+
+.has-off-white-color {
+	color: #fafafa;
+}
+
+.has-light-black-background-color {
+	background: #fafafa;
+}
+
+.has-light-black-color {
+	color: #fafafa;
+}
+
+.has-teal-background-color {
+	background: #00796b;
+}
+
+.has-teal-color {
+	color: #00796b;
+}
+
+.has-light-teal-background-color {
+	background: #009688;
+}
+
+.has-light-teal-color {
+	color: #009688;
+}
+
+.has-blue-background-color {
+	background: #1976d2;
+}
+
+.has-blue-color {
+	color: #1976d2;
+}
+
+.has-light-blue-background-color {
+	background: #2196f3;
+}
+
+.has-light-blue-color {
+	color: #2196f3;
+}
+
+.has-green-background-color {
+	background: #388e3c;
+}
+
+.has-green-color {
+	color: #388e3c;
+}
+
+.has-light-green-background-color {
+	background: #4caf50;
+}
+
+.has-light-green-color {
+	color: #4caf50;
+}
+
+.has-red-background-color {
+	background: #d32f2f;
+}
+
+.has-red-color {
+	color: #d32f2f;
+}
+
+.has-light-red-background-color {
+	background: #f44336;
+}
+
+.has-light-red-color {
+	color: #f44336;
+}
+
 
 /* Author bio from Jetpack */
 

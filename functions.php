@@ -79,62 +79,63 @@ if ( ! function_exists( 'relativity_setup' ) ) :
 		/**
 	  * Add support for Gutenberg features.
 	  *
-	  * @link https://wordpress.org/gutenberg/handbook/reference/theme-support/
+	  * @link https://wordpress.org/gutenberg/handbook/designers-developers/developers/themes/theme-support/
 	  */
-	 add_theme_support( 'align-wide' );
-	add_theme_support( 'editor-color-palette', array(
-		array(
-			'name' => __( 'Teal', 'relativity' ),
-			'slug' => 'teal',
-			'color' => '#00796b',
-		),
-		array(
-			'name' => __( 'Light Teal', 'relativity' ),
-			'slug' => 'light-teal',
-			'color' => '#009688',
-		),
-		array(
-			'name' => __( 'Blue', 'relativity' ),
-			'slug' => 'blue',
-			'color' => '#1976d2',
-		),
-		array(
-			'name' => __( 'Light Blue', 'relativity' ),
-			'slug' => 'light-blue',
-			'color' => '#2196f3',
-		),
-		array(
-			'name' => __( 'Green', 'relativity' ),
-			'slug' => 'green',
-			'color' => '#388e3c',
-		),
-		array(
-			'name' => __( 'Light Green', 'relativity' ),
-			'slug' => 'light-green',
-			'color' => '#4caf50',
-		),
-		array(
-			'name' => __( 'Red', 'relativity' ),
-			'slug' => 'red',
-			'color' => '#d32f2f',
-		),
-		array(
-			'name' => __( 'Light Red', 'relativity' ),
-			'slug' => 'light-red',
-			'color' => '#f44336',
-		),
-		array(
-			'name' => __( 'Off White', 'relativity' ),
-			'slug' => 'off-white',
-			'color' => '#fafafa',
-		),
-		array(
-			'name' => __( 'Light Black', 'relativity' ),
-			'slug' => 'light-black',
-			'color' => '#2d2d2d',
-		),
-	) );
-		
+		add_theme_support( 'align-wide' );
+		add_theme_support( 'editor-color-palette', array(
+			array(
+				'name' => __( 'Teal', 'relativity' ),
+				'slug' => 'teal',
+				'color' => '#00796b',
+			),
+			array(
+				'name' => __( 'Light Teal', 'relativity' ),
+				'slug' => 'light-teal',
+				'color' => '#009688',
+			),
+			array(
+				'name' => __( 'Blue', 'relativity' ),
+				'slug' => 'blue',
+				'color' => '#1976d2',
+			),
+			array(
+				'name' => __( 'Light Blue', 'relativity' ),
+				'slug' => 'light-blue',
+				'color' => '#2196f3',
+			),
+			array(
+				'name' => __( 'Green', 'relativity' ),
+				'slug' => 'green',
+				'color' => '#388e3c',
+			),
+			array(
+				'name' => __( 'Light Green', 'relativity' ),
+				'slug' => 'light-green',
+				'color' => '#4caf50',
+			),
+			array(
+				'name' => __( 'Red', 'relativity' ),
+				'slug' => 'red',
+				'color' => '#d32f2f',
+			),
+			array(
+				'name' => __( 'Light Red', 'relativity' ),
+				'slug' => 'light-red',
+				'color' => '#f44336',
+			),
+			array(
+				'name' => __( 'Off White', 'relativity' ),
+				'slug' => 'off-white',
+				'color' => '#fafafa',
+			),
+			array(
+				'name' => __( 'Light Black', 'relativity' ),
+				'slug' => 'light-black',
+				'color' => '#2d2d2d',
+			),
+		) );
+
+		add_theme_support( 'responsive-embeds' );	
 	}
 endif; // End relativity_setup.
 add_action( 'after_setup_theme', 'relativity_setup' );
