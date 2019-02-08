@@ -33,7 +33,7 @@ That's intentional, because you might want a different shaped logo. If your imag
 
 == Changelog ==
 
-= 2.1 - Jan 2019 =
+= 2.1 - Feb 2019 =
 * Tested with WordPress 5.0+
 * Removed code supporting older Gutenberg versions
 * Fixed some styling issues for the new WordPress editor blocks

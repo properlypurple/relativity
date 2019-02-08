@@ -1149,6 +1149,22 @@ a:active {
 	margin: 0 0 1em;
 }
 
+.wp-block-separator {
+	max-width: 240px; 
+}
+
+.wp-block-separator.is-style-wide {
+	width: 100%;
+	max-width: 100%;
+}
+
+.wp-block-verse {
+	font-family: 'Vollkorn', serif;
+	font-size: inherit;
+	background: inherit;
+	padding: 0;
+}
+
 /* color schemes from editor */
 .has-off-white-background-color {
 	background: #fafafa;
