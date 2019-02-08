@@ -29,7 +29,20 @@ It will pull in the admin's gravatar by default. For a custom image, go to custo
 
 = I set a custom logo, and it's not round anymore.
 That's intentional, because you might want a different shaped logo. If your image is square, add this css code.
-`.custom-logo { border-radius: 50%; }`
+    .custom-logo { 
+        border-radius: 50%; 
+    }
+
+= I don't want your link in my footer/I want my own copyright information =
+That's okay. I don't have a way of changing this in settings, but you can use some css code like this:
+    .author-credit {
+        font-size: 0;
+    }
+
+    .author-credit::after {
+        content: "© 2019 YourAwesomeName";
+        font-size: 0.875rem;
+    }
 
 == Changelog ==
 
