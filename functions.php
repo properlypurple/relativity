@@ -75,6 +75,15 @@ if ( ! function_exists( 'relativity_setup' ) ) :
 			'default-image' => '',
 		) ) );
 
+		/*
+		 * Add support for editor styles
+		 * See https://codex.wordpress.org/Editor_Style
+		 * Also see https://codex.wordpress.org/Editor_Style
+		 */
+		add_theme_support('editor-styles');
+		add_editor_style('editor-style.css');
+		add_editor_style('//fonts.googleapis.com/css?family=Vollkorn:400|Open+Sans:300,400,700');
+
 
 		/**
 	  * Add support for Gutenberg features.

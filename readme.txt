@@ -48,6 +48,7 @@ That's okay. I don't have a way of changing this in settings, but you can use so
 
 = 2.1 - Feb 2019 =
 * Tested with WordPress 5.0+
+* Editor styles, yay!
 * Removed code supporting older Gutenberg versions
 * Fixed some styling issues for the new WordPress editor blocks
 * Added in custom colours for the new WordPress editor

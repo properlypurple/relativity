@@ -1119,22 +1119,13 @@ a:active {
 	font-style: italic;
 	padding-top: 85px;
 	font-family: 'Vollkorn', serif;
-	font-style: italic;
-
 	background: url(images/quote.svg) no-repeat top center;
 }
 .wp-block-quote	cite {
 	font-size: 14px;
 	margin-top: 0;
-}.wp-block-quote {
-	font-size: 20px;
-	font-style: italic;
-	padding-top: 85px;
-	font-family: 'Vollkorn', serif;
-	font-style: italic;
-
-	background: url(images/quote.svg) no-repeat top center;
 }
+
 .wp-block-quote	cite::before {
 	content: "― ";
 }

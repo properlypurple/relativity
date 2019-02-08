@@ -1,0 +1,125 @@
+/* Main column width */
+.wp-block {
+    max-width: 652px;
+}
+
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+    max-width: 922px;
+    width: 100%;
+}
+.wp-block[data-align="wide"][data-type="core/media-text"] {
+    max-width: 780px;
+    width: 100%;
+}
+
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+    max-width: none;
+}
+
+/* Elements */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+	color: #404040;
+	font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+	margin: .35em 0;
+	text-align: left;
+	color: #3c3c3c;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 26px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h4 {
+	font-size: 16px;
+}
+
+h5 {
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+h6 {
+	font-size: 13px;
+}
+
+blockquote {
+	margin: 0 0.5em;
+	font-style: italic;
+	font-size: 18px;
+}
+
+/* block styles from theme */
+.wp-block-quote {
+	font-size: 20px;
+	font-style: italic;
+	padding-top: 85px;
+	font-family: 'Vollkorn', serif;
+	background: url(images/quote.svg) no-repeat top center;
+}
+
+@media(min-width:769px) {
+    .wp-block-quote:not(.is-large):not(.is-style-large) {
+        border-left: none;
+        padding-left: 85px;
+        padding-top: 0;
+        background-position: top left;
+    }
+}
+
+.wp-block-quote	cite {
+	font-size: 14px;
+	margin-top: 0;font-family: 'Open Sans', sans-serif;
+	color: #404040;
+	font-size: 16px;
+		line-height: 1.5;
+}
+
+.wp-block-quote	cite::before {
+	content: "― ";
+}
+
+.wp-block-pullquote {
+	padding: 2.4em 0;
+	background: #fafafa;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+.wp-block-pullquote	> p {
+	font-size: 32px;
+	margin: 0 0 1em;
+}
+
+.wp-block-separator {
+	max-width: 240px; 
+}
+
+.wp-block-separator.is-style-wide {
+	width: 100%;
+	max-width: 100%;
+}
+
+.wp-block-verse {
+	font-family: 'Vollkorn', serif;
+	font-size: inherit;
+	background: inherit;
+	padding: 0;
+}
